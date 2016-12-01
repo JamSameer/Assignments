@@ -1,0 +1,6 @@
+D:\Training\ConsoleApps\ConstuctingClass\CalculateAttendance\bin\Debug\CalculateAttendance.exe.config
+D:\Training\ConsoleApps\ConstuctingClass\CalculateAttendance\bin\Debug\CalculateAttendance.exe
+D:\Training\ConsoleApps\ConstuctingClass\CalculateAttendance\bin\Debug\CalculateAttendance.pdb
+D:\Training\ConsoleApps\ConstuctingClass\CalculateAttendance\obj\Debug\CalculateAttendance.csprojResolveAssemblyReference.cache
+D:\Training\ConsoleApps\ConstuctingClass\CalculateAttendance\obj\Debug\CalculateAttendance.exe
+D:\Training\ConsoleApps\ConstuctingClass\CalculateAttendance\obj\Debug\CalculateAttendance.pdb
