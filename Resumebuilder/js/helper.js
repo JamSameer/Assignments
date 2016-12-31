@@ -50,10 +50,10 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Courses</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
+var HTMLonlineTitle = '<a href="#" class="padding">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineDates = '<div class="date-text padding">%data%</div>';
+var HTMLonlineURL = '<br><a href="http://udacity.com/course/ud804" class="padding">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
@@ -62,13 +62,7 @@ var googleMap = '<div id="map"></div>';
 /*
 The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
 */
-// function inName(name){
-//     name=bio.name.trim().split(" ");
-//     console.log(name);
-//     names[1]=names[1].toUpperCase();
-//     names[0]=names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
-//     return name[0]+" "+name[1];
-// }
+
 $(document).ready(function() {
   $('button').click(function() {
     var $name = $('#name');
@@ -76,13 +70,6 @@ $(document).ready(function() {
     $name.html(iName);
   });
 });
-
-
-// function inName() {
-//     var myNameArray = bio.name.split(" ");
-//     var capsLastName = myNameArray[1].toUpperCase();
-//     return myNameArray[0] + " " + capsLastName;
-// }
 
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.
@@ -195,6 +182,7 @@ function initializeMap() {
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       // your code goes here!
+      infoWindow.open(map,marker);
     });
 
     // this is where the pin actually gets added to the map.
