@@ -80,9 +80,11 @@
         self.addnickname = function() {
 
 
-
+            if(self.catname() !=  "")
+            {
           self.currentCat().nickname.push( self.catname());
           self.catname("");
+      }
         };
 
         self.removeNickname = function(data) {
